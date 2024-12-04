@@ -14,6 +14,9 @@ About Components".
 
 ![Application Wireframe](./assets/app_wireframe.png "Application Wireframe")
 
+There's no real process flow for this app since its purpose is to aid in
+demonstrating how to build components.
+
 ## Installation
 
 To install this app:
