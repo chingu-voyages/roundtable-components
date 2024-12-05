@@ -1,5 +1,4 @@
-import Logo from './components/Logo.jsx'
-import Navbar from './components/Navbar.jsx'
+import Header from './components/Header.jsx'
 import Banner from './components/Banner.jsx'
 import Products from './components/Products.jsx'
 import Footer from './components/Footer.jsx'
@@ -9,23 +8,14 @@ function App() {
 
   return (
     <div>
-      <section className="header">
-        <div className='header-item-left'>
-          <Logo />
-        </div>
-        <div className='header-item-right'>
-          <Navbar/>
-        </div>
-      </section>
+      <Header />
 
-      <section className='content'>
+      <main className='content'>
         <Banner />
         <Products />
-      </section>
+      </main>
 
-      <section className='footer'>
-        <Footer />
-      </section>
+      <Footer />
     </div>
   )
 }

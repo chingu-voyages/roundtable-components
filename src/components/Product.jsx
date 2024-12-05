@@ -1,13 +1,14 @@
+import PropTypes from 'prop-types'
 import productImage from '../../assets/product_placeholder.png'
 
-const Product = () => {
+const Product = ({ productInfo }) => {
   return (
     <div className='product'>
       <div className='product-image'>
         <img src={ productImage } alt="Product image" />
       </div>
       <div className='product-text'>
-        Product name
+        <b><em>{ productInfo.name }</em></b>
       </div>
       <div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -20,6 +21,13 @@ const Product = () => {
       </div>
     </div>
   )
+}
+
+// Validate the incoming props object
+Product.propTypes = {
+  productInfo: PropTypes.shape({
+    name: PropTypes.string
+  })
 }
 
 export default Product

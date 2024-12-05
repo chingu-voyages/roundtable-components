@@ -17,7 +17,10 @@ body {
   font-size: 16px;
   border-radius: 15px;
   cursor: pointer;
+  margin: 2rem;
 }
+
+/* Header area */
 
 .logo {
   padding: 1.5rem;
@@ -31,14 +34,6 @@ body {
   align-items: center;
 }
 
-.header-block-left {
-  justify-content: start;
-}
-
-.header-block-right {
-  justify-content: end;
-}
-
 .row {
   width: 100%;
   display: flex;
@@ -47,6 +42,16 @@ body {
 .block {
   width: 100px;
 }
+
+.justify-right {
+  justify-self: end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+/* Conent area */
 
 .banner-image {
   margin: 3rem;
@@ -60,14 +65,11 @@ body {
   border: thin solid;
 }
 
-.content {
-}
-
 .product-list {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 100% 100% 100%;
-  gap: 5rem;
+  gap: 10rem;
   margin-top: 1rem;
   width: 20%;
 }
@@ -76,6 +78,8 @@ body {
   width: 100%;
   text-align: justify;
 }
+
+/* Footer area */
 
 .footer {
   width: 100%;

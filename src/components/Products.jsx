@@ -12,9 +12,9 @@ const Products = () => {
       </div>
 
       <div className='product-list'>
-        <Product />
-        <Product />
-        <Product />
+        <Product productInfo={{ name: "Right hand monkey wrench" }} />
+        <Product productInfo={{ name: "Reversable screwdriver" }} />
+        <Product productInfo={{ name: "Foam headed hammer" }} />
       </div>
     </div>
   )
