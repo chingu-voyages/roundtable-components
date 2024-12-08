@@ -1,10 +1,19 @@
 import PropTypes from 'prop-types'
+import Button from './Button.jsx'
 import productImage from '../../assets/product_placeholder.png'
 
 const Product = ({ productInfo }) => {
+  const addToFavorites = () => {
+    // Handle this action
+  }
+
+  const addToCart = () => {
+    // Handle this action
+  }
+
   return (
     <div className='product'>
-      <div className='product-image'>
+      <div>
         <img src={ productImage } alt="Product image" />
       </div>
       <div className='product-text'>
@@ -16,8 +25,9 @@ const Product = ({ productInfo }) => {
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
         commodo consequat.
       </div>
-      <div className='button'>
-        Add to Cart
+      <div className='row'>
+        <Button className='block button' buttonInfo={{ name: "Add to Favorites", eventHandler: addToFavorites}} />
+        <Button className='block button' buttonInfo={{ name: "Add to Cart", eventHandler: addToCart }} />
       </div>
     </div>
   )
